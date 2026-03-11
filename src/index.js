@@ -16,7 +16,6 @@ const get = async (apiKey, domain, attributes, filter = null) => {
 };
 
 const set = async (apiKey, domain, attributes, value) => {
-
   return await setCache(apiKey, domain, attributes, value);
 };
 
