@@ -20,15 +20,6 @@ const set = async (apiKey, domain, attributes, value) => {
   return await setCache(apiKey, domain, attributes, value);
 };
 
-function isObjectString(str) {
-  try {
-    const parsed = JSON.parse(str);
-    return typeof parsed === "object" && parsed !== null;
-  } catch (err) {
-    return false;
-  }
-}
-
 module.exports = {
   initiate,
   get,
